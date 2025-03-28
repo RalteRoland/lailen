@@ -1,3 +1,40 @@
+
+A Point of Sale (POS) application for departmental stores built with Laravel and Filament PHP.
+
+## Features
+
+- User authentication
+- Product management
+- Stock Entry management
+
+## Requirements
+
+- Laravel
+- Composer
+- Filament
+
+
+## Installation
+
+- composer install
+- cp .env.example .env
+- php artisan key:generate
+- php artisan migrate
+- php artisan make:filament-user 
+- php artisan serve or php -S localhost:8000 -t public
+
+## Details
+
+Product Management:
+    - Products have name, barcode, and description
+    - Simple products without variants
+
+Stock Management:
+    - 1:N relationship between Product and StockEntry
+    --Each stock entry tracks purchase price and MRP
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
