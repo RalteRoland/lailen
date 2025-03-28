@@ -16,6 +16,7 @@ A Point of Sale (POS) application for departmental stores built with Laravel and
 
 ## Installation
 
+- git clone https://github.com/RalteRoland/lailen.git
 - composer install
 - cp .env.example .env
 - php artisan key:generate
