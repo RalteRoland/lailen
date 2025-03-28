@@ -28,6 +28,7 @@ class StockResource extends Resource
         return $form
             ->schema([
                 Select::make('product_id')
+                ->label('Products')
                 ->options(Product::all()->pluck('name', 'id')),
                 TextInput::make('price'),
                 TextInput::make('quantity'),
